@@ -3,7 +3,7 @@ package org.example;
 import java.lang.reflect.Method;
 
 public class RunTests {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args, int i) throws Exception {
         int passed = 0, failed = 0;
         for (String className: args){
             for (Method m : Class.forName(className).getMethods()) {
